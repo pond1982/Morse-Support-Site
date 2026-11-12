@@ -1,0 +1,27 @@
+/* Native app highlights. Inherits each app's current brand palette. */
+body .app-highlights{padding:80px 24px;background:var(--brand-tint,#f4f5f7);color:var(--brand-ink,#202a30);scroll-margin-top:30px}
+body .app-highlight-inner{width:100%;max-width:1140px;margin:auto;display:grid;grid-template-columns:minmax(0,1fr) minmax(0,420px);gap:clamp(28px,6vw,80px);align-items:center}
+body .app-highlight-copy{min-width:0;max-width:580px}
+body .app-highlight-kicker{display:inline-flex;align-items:center;gap:10px;color:var(--brand-accent);font:750 .72rem/1.5 system-ui,sans-serif;letter-spacing:.13em;text-transform:uppercase;margin:0 0 18px}
+body .app-highlight-kicker:before{content:"";width:8px;height:8px;border-radius:50%;background:var(--brand-secondary)}
+body .app-highlights h2{font-size:clamp(2.2rem,4.2vw,3.7rem);line-height:1.08;letter-spacing:-.04em;margin:0 0 22px;color:var(--brand-ink)}
+body .app-highlight-intro{font-size:1.08rem;line-height:1.7;margin:0 0 26px}
+body .app-highlight-beats{list-style:none;margin:0 0 28px;padding:0;display:grid;gap:18px}
+body .app-highlight-beats li{display:grid;grid-template-columns:38px 1fr;gap:12px;align-items:start;margin:0;padding:0}
+body .app-highlight-beats .beat-number{display:flex;align-items:center;justify-content:center;min-height:34px;border:1px solid var(--brand-soft);border-radius:9px;color:var(--brand-accent);background:#fff;font:750 .72rem/1.5 system-ui,sans-serif}
+body .app-highlight-beats strong{display:block;font-size:1rem;line-height:1.4;margin:0 0 3px}
+body .app-highlight-beats p{font-size:.9rem;line-height:1.6;margin:0;color:#4b535b}
+body .app-highlight-note{font-size:.78rem;line-height:1.6;color:#515963;margin:0 0 18px}
+body .app-highlight-transcript{border-top:1px solid var(--brand-soft);padding-top:14px;margin:0;font-size:.86rem;line-height:1.65}
+body .app-highlight-transcript summary{cursor:pointer;color:var(--brand-accent);font-weight:700;padding:6px 0;min-height:36px}
+body .app-highlight-transcript p{margin:12px 0 0}
+body .app-highlight-player{margin:0;min-width:0;padding:16px;border-radius:26px;background:linear-gradient(145deg,var(--brand-accent),var(--brand-ink));box-shadow:0 18px 46px #14223825;color:#fff}
+body .app-highlight-player video{display:block;width:100%;height:auto;aspect-ratio:720/1048;object-fit:contain;background:#111;border-radius:13px}
+body .app-highlight-player video::cue{font:500 14px/1.5 system-ui,sans-serif;background:#101820e8;color:#fff}
+body .app-highlight-player figcaption{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:4px 12px;margin:12px 2px 0;font:650 .72rem/1.6 system-ui,sans-serif;color:#fff}
+body .app-highlights a:focus-visible,body .app-highlights summary:focus-visible,body .app-highlights video:focus-visible{outline:3px solid var(--brand-secondary);outline-offset:5px}
+body .app-highlight-fallback{font-size:.8rem;line-height:1.5;margin:14px 0 0}
+body .app-highlight-fallback a{color:var(--brand-accent);text-decoration:underline;text-underline-offset:4px}
+@media(max-width:760px){body .app-highlights{padding:56px 20px}body .app-highlight-inner{grid-template-columns:1fr;gap:28px}body .app-highlight-player{max-width:420px;width:100%;margin-inline:auto}body .app-highlights h2{font-size:clamp(2.1rem,8vw,3rem)}}
+@media(max-width:380px){body .app-highlights{padding-inline:16px}body .app-highlight-player{padding:10px;border-radius:20px}body .app-highlight-player figcaption{font-size:.65rem}}
+@media(prefers-reduced-motion:reduce){body .app-highlights *{animation:none!important;transition:none!important}}
